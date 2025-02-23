@@ -1,0 +1,270 @@
+.contact {
+    background-image: url(https://www.smartsites.com/media/bg-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+.contact-banner h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-banner form{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 800px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-bet;
+    align-items: center;
+    flex-direction: column; 
+}
+.inputform{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: 2px solid #f2efb9;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+.inputform input,textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.contact-banner h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.servicebox{
+    display: flex;
+    margin-top: 0px;
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    padding: 5px 10px;
+    color: rgb(91, 88, 163);
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    border-radius: 5px;
+    width:15%;
+    height:180px;
+}
+.box img{
+    /* margin-left: 10px; */
+    margin: 10px 20px;
+    width: 55px;
+    height:55px;
+}
+.box label{
+    font-size:13px;
+    font-weight: 600;
+    text-align: center;
+}
+.box input{
+    
+}
+.box input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+.submitbtn{
+    background-color: rgb(206, 166, 24);
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Icon{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 2rem;
+    background-color: #d1a508;
+    
+}
+.submitbtn button {
+    background-color: transparent;
+    border: none;
+    border-right:2px solid #f4cc05;
+    width: 90%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.submitbtn:hover{
+    background-color: #f4cc05;
+}
+.follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+}
+.follow h1{
+    color: rgb(50, 50, 51);
+    font-size:4em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.follow ul{
+    /* background-color: #f4cc05; */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.follow ul li{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.follow ul img{
+   width: 60px;
+   height: 60px;
+    border-radius: 50%;
+    align-items: center;
+}
+ .follow ul li h2{
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.follow ul li p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(50, 50, 51);
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.follow ul a :hover{
+    background-color: #f4cc05;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Existing styles remain unchanged */
+
+@media screen and (max-width: 1024px) {
+    .contact-banner h1 {
+        font-size: 3em;
+    }
+    .contact-banner form {
+        width: 90%;
+    }
+    .box {
+        width: 25%;
+        height: auto;
+        padding: 10px;
+    }
+    .follow ul li {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 20px;
+    }
+    .contact-banner h1 {
+        font-size: 2.5em;
+    }
+    .contact-banner form {
+        width: 100%;
+    }
+    .inputform {
+        font-size: 1.2rem;
+    }
+    .box {
+        width: 45%;
+    }
+    .servicebox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .submitbtn {
+        margin-top: 50px;
+    }
+    .follow ul li {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-banner h1 {
+        font-size: 2em;
+    }
+    .contact-banner h2 {
+        font-size: 1.5em;
+    }
+    .inputform {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    .box {
+        width: 80%;
+        height: auto;
+    }
+    .follow ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .follow ul li {
+        width: 80%;
+    }
+}
